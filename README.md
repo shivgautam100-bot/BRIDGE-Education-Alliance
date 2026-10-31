@@ -1,2 +1,2 @@
-# BRIDGE-Education-Alliance
+# bridge education allaince
 website
