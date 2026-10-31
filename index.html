@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGE - Education Alliance | Transforming Competitive Exam Coaching</title>
+    <meta name="description" content="Connecting coaching institutes, students, rankers, and elite bureaucratic leaders under one structured growth platform for UPSC, State PSC, SSC, Banking, NEET & JEE.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0d2238',
+                            navyLight: '#183654',
+                            maroon: '#8b1e2d',
+                            maroonDark: '#6d131f',
+                            gold: '#c59d45',
+                            cream: '#fdfbf7',
+                            slateBg: '#f8fafc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-glow {
+            box-shadow: 0 10px 40px -10px rgba(13, 34, 56, 0.15);
+        }
+        .hero-pattern {
+            background-color: #0d2238;
+            background-image: radial-gradient(rgba(197, 157, 69, 0.15) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+        }
+        .modal-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-slateBg text-slate-800 antialiased selection:bg-brand-maroon selection:text-white">
+
+    <!-- TOP NOTIFICATION STRIP -->
+    <div class="bg-brand-navy text-white text-xs md:text-sm py-2 px-4 border-b border-brand-maroon/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-slate-300">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Empowering 10+ Premier Coaching Partnerships across India</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:+918171223486" class="hover:text-brand-gold transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-brand-gold text-xs"></i> +91 8171223486
+                </a>
+                <a href="https://wa.me/918171223486?text=Hello%20BRIDGE%20Alliance,%20I%20want%20to%20know%20more%20about%20your%20services" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp Support
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <nav class="sticky top-0 z-40 glass-nav border-b border-slate-200 transition-all duration-300 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 flex-shrink-0">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-sm">
+                            <!-- Cap (Maroon) -->
+                            <polygon points="100,25 155,55 100,85 45,55" fill="#8B1E2D"/>
+                            <polygon points="100,80 145,55 100,45 55,55" fill="#6d131f" opacity="0.3"/>
+                            <rect x="78" y="75" width="44" height="20" rx="3" fill="#8B1E2D"/>
+                            <line x1="150" y1="55" x2="155" y2="90" stroke="#8B1E2D" stroke-width="4"/>
+                            <circle cx="155" cy="92" r="6" fill="#8B1E2D"/>
+                            <!-- Open Book (Navy) -->
+                            <path d="M50 102 C65 96 85 96 97 104 L97 136 C85 128 65 128 50 134 Z" fill="#0D2238"/>
+                            <path d="M150 102 C135 96 115 96 103 104 L103 136 C115 128 135 128 150 134 Z" fill="#0D2238"/>
+                            <!-- Bridge Arch Underneath (Navy) -->
+                            <line x1="38" y1="146" x2="162" y2="146" stroke="#0D2238" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M48 146 L48 175 M152 146 L152 175" stroke="#0D2238" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M48 175 Q100 146 152 175" stroke="#0D2238" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-black tracking-wider text-brand-navy font-sans leading-none">BRIDGE</span>
+                        <div class="w-full h-0.5 bg-brand-maroon my-1"></div>
+                        <span class="text-[9px] tracking-[0.25em] font-bold text-slate-700 uppercase">Education Alliance</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+                    <a href="#about" class="hover:text-brand-maroon transition">About</a>
+                    <a href="#bridge-meaning" class="hover:text-brand-maroon transition">The Model</a>
+                    <a href="#stakeholders" class="hover:text-brand-maroon transition">Stakeholders</a>
+                    <a href="#services" class="hover:text-brand-maroon transition">Services</a>
+                    <a href="#roadmap" class="hover:text-brand-maroon transition">Phases</a>
+                    <a href="#exams" class="hover:text-brand-maroon transition text-brand-maroon font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-graduation-cap"></i> Targeted Exams
+                    </a>
+                </div>
+
+                <!-- DESKTOP CTA BUTTON -->
+                <div class="hidden md:flex items-center gap-3">
+                    <button onclick="openModal('General Consultation')" class="bg-brand-maroon hover:bg-brand-maroonDark text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                        <i class="fa-solid fa-calendar-check"></i> Request Consultation
+                    </button>
+                </div>
+
+                <!-- MOBILE HAMBURGER BUTTON -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="text-slate-700 hover:text-brand-maroon focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-100 px-6 py-4 space-y-3 shadow-xl">
+            <a href="#about" class="block font-medium text-slate-700 py-1" onclick="toggleMobileMenu()">About</a>
+            <a href="#bridge-meaning" class="block font-medium text-slate-700 py-1" onclick="toggleMobileMenu()">The BRIDGE Model</a>
+            <a href="#stakeholders" class="block font-medium text-slate-700 py-1" onclick="toggleMobileMenu()">Stakeholders</a>
+            <a href="#services" class="block font-medium text-slate-700 py-1" onclick="toggleMobileMenu()">Services</a>
+            <a href="#roadmap" class="block font-medium text-slate-700 py-1" onclick="toggleMobileMenu()">Phases</a>
+            <a href="#exams" class="block font-bold text-brand-maroon py-1" onclick="toggleMobileMenu()">Targeted Exams</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="toggleMobileMenu(); openModal('Mobile Menu CTA')" class="w-full bg-brand-maroon text-white py-2.5 rounded-lg font-semibold text-center">
+                    Request Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-pattern text-white relative pt-16 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-maroon/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-brand-gold text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved"></i> India's Premier Competitive Examination Ecosystem
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Connecting Institutes, Rankers & <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-200">Elite Bureaucrats</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
+                        The strategic growth partner for institutions preparing aspirants for UPSC, State PSC, SSC, Banking, Railway, NEET, and IIT-JEE. Delivering measurable academic excellence and scalable revenue systems.
+                    </p>
+
+                    <!-- Feature Matrix -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-300 font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Mock Interview Panels
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> DAF Consultation Experts
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> AIR 1-100 Testimonials
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Revenue Optimization
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Hybrid Class Tech
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-brand-gold"></i> Bureaucratic Keynotes
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                        <button onclick="openModal('Hero Partner CTA')" class="bg-brand-maroon hover:bg-brand-maroonDark text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all duration-300 shadow-xl shadow-brand-maroon/30 flex items-center justify-center gap-3">
+                            <span>Partner With Us</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                        <a href="tel:+918171223486" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-7 py-3.5 rounded-xl font-semibold text-base transition-all flex items-center justify-center gap-2.5 backdrop-blur">
+                            <i class="fa-solid fa-phone text-brand-gold"></i> +91 8171223486
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/95 rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-white/40 backdrop-blur-xl relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-maroon text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                            National Network
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-brand-navy mb-4 border-b border-slate-100 pb-3">
+                            The Strategic Alliance Matrix
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3.5 p-3 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-blue-100 text-brand-navy flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">Coaching Institutes</h4>
+                                    <p class="text-xs text-slate-600">Regional & Delhi-based centres scaling through revenue optimization & admissions.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 p-3 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-red-100 text-brand-maroon flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">Top Rankers (AIR 1 - 100)</h4>
+                                    <p class="text-xs text-slate-600">High-impact seminars, digital testimonials, crash courses & guest lecturing.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 p-3 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-amber-100 text-brand-gold flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">Elite Bureaucratic Panel</h4>
+                                    <p class="text-xs text-slate-600">Retired & Serving Bureaucrats, former UPSC Members for mock boards & DAF.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5 p-3 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 text-lg font-bold">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-900">Aspirants & Students</h4>
+                                    <p class="text-xs text-slate-600">Free/subsidized Prelims-to-Interview guidance, mentorship & career development.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-100">
+                            <button onclick="openModal('Quick Lead Widget')" class="w-full py-3 bg-brand-navy hover:bg-brand-navyLight text-white rounded-xl text-sm font-semibold transition flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-envelope"></i> Connect With Our Growth Team
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- EXAMS TICKER STRIP -->
+    <div class="bg-white border-y border-slate-200 py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-maroon flex items-center gap-2">
+                    <i class="fa-solid fa-bullseye"></i> Click Exam to Explore:
+                </span>
+                <div class="flex flex-wrap items-center justify-center gap-2">
+                    <a href="#exam-upsc" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-award text-amber-500"></i> UPSC CSE
+                    </a>
+                    <a href="#exam-statepsc" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition">State PSC</a>
+                    <a href="#exam-ssc" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition">SSC CGL / CHSL</a>
+                    <a href="#exam-banking" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition">Banking (IBPS / SBI)</a>
+                    <a href="#exam-railway" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition">Railway (RRB)</a>
+                    <a href="#exam-neetjee" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200 hover:bg-brand-maroon hover:text-white transition">NEET & IIT-JEE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TARGETED EXAMS SECTION -->
+    <section id="exams" class="scroll-mt-28 py-20 bg-gradient-to-b from-slate-50 to-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-maroon font-bold text-xs uppercase tracking-widest bg-red-50 border border-red-100 px-3.5 py-1 rounded-full">Competitive Focus</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Targeted Examinations Covered</h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    We architect customized student acquisition pipelines, topper associations, and bureaucratic panels tailored to India’s most demanding competitive examinations.
+                </p>
+            </div>
+
+            <!-- EXAMS GRID -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- 1. UPSC CSE -->
+                <div id="exam-upsc" class="scroll-mt-32 bg-white rounded-2xl p-6 border-2 border-brand-maroon/20 hover:border-brand-maroon shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-red-100 text-brand-maroon flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-landmark-flag"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-red-50 text-brand-maroon px-2.5 py-1 rounded-full border border-red-100">National Priority</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">UPSC Civil Services</h3>
+                        <p class="text-xs text-brand-maroon font-semibold mb-3">Prelims • Mains • Personality Test (Interview)</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Complete institutional acceleration including DAF (Detailed Application Form) assessment boards, Mock Interview panels with retired UPSC members, and ranker seminars (AIR 1 - 100).
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• Former UPSC Members & Bureaucrats Panel</li>
+                                <li>• Complimentary Mains-cleared student acquisition</li>
+                                <li>• AIR 1–100 Testimonials & Video Sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('UPSC')" class="w-full py-2.5 rounded-lg bg-brand-maroon hover:bg-brand-maroonDark text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get UPSC Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- 2. STATE PSC -->
+                <div id="exam-statepsc" class="scroll-mt-32 bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-navy shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-blue-100 text-brand-navy flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-blue-50 text-brand-navy px-2.5 py-1 rounded-full border border-blue-100">State Civil Services</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">State PSC Examinations</h3>
+                        <p class="text-xs text-blue-700 font-semibold mb-3">UPPSC • BPSC • APPSC • MPPSC • RAS</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Specialized regional acquisition campaigns. We connect regional institutes with state administrative rankers (SDMs, DSPs) and retired state PSC officers for interview boards.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• State PSC Mains Guidance Programs</li>
+                                <li>• Regional Mock Interview setups</li>
+                                <li>• State Ranker & Officer endorsement videos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('State PSC')" class="w-full py-2.5 rounded-lg bg-brand-navy hover:bg-brand-navyLight text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get State PSC Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- 3. SSC (CGL / CHSL) -->
+                <div id="exam-ssc" class="scroll-mt-32 bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-navy shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-building-user"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-amber-50 text-amber-800 px-2.5 py-1 rounded-full border border-amber-100">Central Recruitment</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">SSC CGL & CHSL</h3>
+                        <p class="text-xs text-amber-700 font-semibold mb-3">Tier-I • Tier-II • Officer Cadre Recruitment</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            High-volume student batch recruitment strategy for regional and national institutes. Onboarding selected GST Inspectors, ASOs, and Preventive Officers for strategy talk shows.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• Foundation batch lead generation</li>
+                                <li>• Tier-II module student integration</li>
+                                <li>• Inspector ranker seminars & crash courses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('SSC')" class="w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get SSC Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- 4. BANKING (IBPS, SBI PO) -->
+                <div id="exam-banking" class="scroll-mt-32 bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-navy shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-vault"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-full border border-emerald-100">Financial Sector</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">Banking Examinations</h3>
+                        <p class="text-xs text-emerald-700 font-semibold mb-3">SBI PO • IBPS PO • RBI Grade B • Clerical</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Conversion funnel optimization for banking institutes. Retired General Managers and Chief Managers on board to conduct authentic bank personality interview sessions.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• Bank Officer Interview Simulation Panels</li>
+                                <li>• Speed test and test series marketing</li>
+                                <li>• Digital performance campaigns for fast intake</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('Banking')" class="w-full py-2.5 rounded-lg bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get Banking Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- 5. RAILWAY EXAMS (RRB) -->
+                <div id="exam-railway" class="scroll-mt-32 bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-navy shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-900 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-train"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-cyan-50 text-cyan-900 px-2.5 py-1 rounded-full border border-cyan-100">Mass Reach</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">Railway Recruitment</h3>
+                        <p class="text-xs text-cyan-800 font-semibold mb-3">RRB NTPC • RRB ALP • Group D • JE</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Scaling multi-branch physical classrooms, LMS integrations, and targeted local city campaigns that pull thousands of aspirants into structured foundation batches.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• High-volume student conversion funnels</li>
+                                <li>• Regional language branding & advertising</li>
+                                <li>• Hybrid streaming class setups</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('Railway')" class="w-full py-2.5 rounded-lg bg-cyan-900 hover:bg-cyan-950 text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get Railway Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- 6. NEET & IIT-JEE -->
+                <div id="exam-neetjee" class="scroll-mt-32 bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-maroon shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl bg-purple-100 text-purple-900 flex items-center justify-center text-xl font-bold group-hover:scale-110 transition">
+                                <i class="fa-solid fa-atom"></i>
+                            </span>
+                            <span class="text-[10px] uppercase tracking-wider font-extrabold bg-purple-50 text-purple-900 px-2.5 py-1 rounded-full border border-purple-100">Science & Entrance</span>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-brand-navy">NEET UG & IIT-JEE</h3>
+                        <p class="text-xs text-purple-800 font-semibold mb-3">Medical • Engineering • Foundation (Class 9-12)</p>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                            Establishing long-term institutional authority. Connecting institutes with top medical & engineering rankers, parent-counselor conversion frameworks, and smart studio builds.
+                        </p>
+                        <div class="bg-slate-50 p-3 rounded-lg border border-slate-100 mb-4">
+                            <p class="text-[11px] font-bold text-slate-700 mb-1">Key Deliverables:</p>
+                            <ul class="text-[11px] text-slate-600 space-y-1">
+                                <li>• Academic sales & counselor training</li>
+                                <li>• IITian & AIIMS ranker webinars & strategy</li>
+                                <li>• Parent conversion seminar management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button onclick="openModalForExam('NEET')" class="w-full py-2.5 rounded-lg bg-purple-900 hover:bg-purple-950 text-white text-xs font-bold transition flex items-center justify-center gap-2">
+                        <span>Get NEET/JEE Support</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Bottom Custom Exam Banner -->
+            <div class="mt-12 bg-brand-navy text-white rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h4 class="text-xl font-extrabold text-white">Need customized support for another examination or state syllabus?</h4>
+                    <p class="text-xs text-slate-300 mt-1">We curate bespoke bureaucratic advisory boards and ranker networks for specific state requirements.</p>
+                </div>
+                <button onclick="openModal('Custom Exam Inquiry')" class="px-6 py-3 bg-brand-maroon hover:bg-brand-maroonDark text-white font-bold text-xs rounded-xl shadow-lg transition flex-shrink-0">
+                    Consult Exam Specialist
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- THE B-R-I-D-G-E MODEL -->
+    <section id="bridge-meaning" class="scroll-mt-28 py-20 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-maroon font-bold text-xs uppercase tracking-widest bg-red-50 border border-red-100 px-3 py-1 rounded-full">Core DNA</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Why We Are Called "BRIDGE"</h2>
+                <p class="text-slate-600 mt-3 text-base">Because we act as an authentic, high-impact bridge between institutional growth and candidate triumph.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- B -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-navy text-white flex items-center justify-center text-xl font-black">B</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Branding</h3>
+                    <p class="text-xs text-slate-500 mt-1">Authority, social media dominance & market presence</p>
+                </div>
+
+                <!-- R -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-maroon text-white flex items-center justify-center text-xl font-black">R</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Revenue</h3>
+                    <p class="text-xs text-slate-500 mt-1">Lead pipelines, batch conversions & profit optimization</p>
+                </div>
+
+                <!-- I -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-navy text-white flex items-center justify-center text-xl font-black">I</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Infrastructure</h3>
+                    <p class="text-xs text-slate-500 mt-1">Hybrid studio setups, smart classrooms & LMS systems</p>
+                </div>
+
+                <!-- D -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-maroon text-white flex items-center justify-center text-xl font-black">D</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Development</h3>
+                    <p class="text-xs text-slate-500 mt-1">Academic curriculum, pedagogy & sales training</p>
+                </div>
+
+                <!-- G -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-navy text-white flex items-center justify-center text-xl font-black">G</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Growth</h3>
+                    <p class="text-xs text-slate-500 mt-1">Multi-city branch scaling & institutional expansion</p>
+                </div>
+
+                <!-- E -->
+                <div class="bg-white rounded-xl p-6 text-center border border-slate-200 shadow-sm hover:border-brand-maroon hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-brand-maroon text-white flex items-center justify-center text-xl font-black">E</div>
+                    <h3 class="font-extrabold text-brand-navy text-base">Engagement</h3>
+                    <p class="text-xs text-slate-500 mt-1">Distinguished mentors, topper talk shows & student trust</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section id="about" class="scroll-mt-28 py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-10 items-stretch">
+                
+                <!-- Vision -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-gradient-to-br from-slate-900 to-brand-navy text-white relative overflow-hidden flex flex-col justify-between">
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-brand-gold text-2xl mb-6">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold">Our North Star</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-2 mb-4">Our Vision</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                            To build India’s most integrated and result-driven competitive examination ecosystem by strategically connecting coaching institutes, students, rankers, and elite bureaucratic leaders under one structured growth platform. 
+                            <br><br>
+                            We envision becoming the backbone growth partner for institutions preparing aspirants for UPSC, State PSC, SSC, Banking, Railway, NEET, and IIT-JEE by delivering measurable academic excellence, scalable revenue systems, and sustainable brand positioning.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/10 text-xs text-slate-400">
+                        Strategic Ecosystem Partner • All-India Footprint
+                    </div>
+                </div>
+
+                <!-- Mission -->
+                <div class="p-8 sm:p-10 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-lg bg-brand-maroon/10 flex items-center justify-center text-brand-maroon text-2xl mb-6">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <span class="text-brand-maroon uppercase tracking-widest text-xs font-bold">Action-Driven Purpose</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy mt-2 mb-4">Our Mission</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Our mission is to transform coaching institutes into high-performance academic enterprises by providing end-to-end solutions including revenue optimization, sales training, branding, lead generation, infrastructure planning, LMS integration, and hybrid classroom development.
+                            <br><br>
+                            We aim to bridge aspirants with quality mentorship, structured mock interview platforms, and exposure to distinguished panelists such as former UPSC members, senior bureaucrats, and accomplished rankers.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-200 text-xs text-slate-500 font-semibold flex items-center gap-2">
+                        <i class="fa-solid fa-shield text-brand-maroon"></i> Committed to ethical practices & national nation-building.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 PRIMARY STAKEHOLDERS -->
+    <section id="stakeholders" class="scroll-mt-28 py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-maroon font-bold text-xs uppercase tracking-widest bg-red-50 border border-red-100 px-3 py-1 rounded-full">Stakeholder Architecture</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Tailored Value For All 4 Stakeholders</h2>
+                <p class="text-slate-600 mt-3 text-base">A transparent, reciprocal ecosystem engineered for scalable outcomes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Stakeholder 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-navy flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Stakeholder 01</span>
+                        <h3 class="text-lg font-extrabold text-brand-navy mt-1 mb-3">Coaching Institutes</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Serving regional hubs and Delhi-based institutes expanding nationwide.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Regional Category I:</strong> Targeted student lead generation for foundation batch programs.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>State PSC Category II:</strong> UPPSC, BPSC, APPSC focus with specialized Mains guidance modules.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Delhi Chains:</strong> Multi-city brand scaling & personality interview infrastructure.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('Institute Partnership Inquiry')" class="mt-6 w-full py-2.5 rounded-lg border border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white transition font-semibold text-xs">
+                        Partner As Institute
+                    </button>
+                </div>
+
+                <!-- Stakeholder 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Stakeholder 02</span>
+                        <h3 class="text-lg font-extrabold text-brand-navy mt-1 mb-3">Students & Aspirants</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            The "Strategic Acquisition" approach that elevates high-merit candidates.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 1 (Foundation):</strong> Targeted enrollment with peer mentorship & batch support.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 2 (Prelims Qualified):</strong> Complimentary specialized Mains Guidance in exchange for brand association.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 3 (Mains Qualified):</strong> Free Mock Interview Board access & DAF personality tests.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('Student Support Inquiry')" class="mt-6 w-full py-2.5 rounded-lg border border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white transition font-semibold text-xs">
+                        Student Mentorship
+                    </button>
+                </div>
+
+                <!-- Stakeholder 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-maroon flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-maroon uppercase tracking-wider">Stakeholder 03</span>
+                        <h3 class="text-lg font-extrabold text-brand-navy mt-1 mb-3">Successful Rankers</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Professional personal branding, honorarium sessions & nationwide influence.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 1:</strong> High-value written & video testimonials driving brand authority.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 2 (AIR 1 - 100):</strong> Keynote seminars, webinars, and inspiring story-based strategy sessions.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Category 3 (Gratitude Engagement):</strong> Pro-bono collaboration with honorarium appreciation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('Ranker Network Join')" class="mt-6 w-full py-2.5 rounded-lg border border-brand-maroon text-brand-maroon hover:bg-brand-maroon hover:text-white transition font-semibold text-xs">
+                        Join Ranker Network
+                    </button>
+                </div>
+
+                <!-- Stakeholder 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-gold flex items-center justify-center text-xl font-bold mb-4">
+                            <i class="fa-solid fa-landmark"></i>
+                        </div>
+                        <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Stakeholder 04</span>
+                        <h3 class="text-lg font-extrabold text-brand-navy mt-1 mb-3">Elite Panel Members</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Retired/Serving Bureaucrats, former UPSC Members & Subject Matter Experts.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>DAF Analysis:</strong> Individualized Personality Assessment & 1-on-1 mock interviews.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Inaugurations & Keynotes:</strong> High-impact institutional launches & leadership talks.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Brand Ambassadorship:</strong> Managed honorarium engagements sustaining institutional margin.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="openModal('Elite Panel Onboarding')" class="mt-6 w-full py-2.5 rounded-lg border border-brand-gold text-amber-700 hover:bg-brand-gold hover:text-white transition font-semibold text-xs">
+                        Connect with Panel
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SERVICES -->
+    <section id="services" class="scroll-mt-28 py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-maroon font-bold text-xs uppercase tracking-widest bg-red-50 border border-red-100 px-3 py-1 rounded-full">Our Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">Full-Stack Services For Academic Growth</h2>
+                <p class="text-slate-600 mt-3 text-base">From lead generation to bureaucratic interview boards and LMS infrastructure.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-maroon text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-maroon/20">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Revenue & Sales Optimization</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Comprehensive institutional revenue audit, counsellor sales training, lead conversion pipelines, and structured KPI frameworks to boost admissions.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-maroon">Revenue Review • Sales Training • KPI Structuring</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-navy/20">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Marketing & Branding</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Multi-channel online & offline marketing campaigns, hyper-targeted student lead acquisition, social media authority building, and content strategy.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-navy">Lead Generation • Social Media Growth • Brand Positioning</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-maroon text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-maroon/20">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Topper & Ranker Engagement</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Direct facilitation with successful rankers (AIR 1-100) for video endorsements, offline seminars, student webinars, podcasts, and strategy lectures.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-maroon">Testimonials • Podcasts • Strategy Sessions</span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-navy/20">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Elite Bureaucratic Panel Access</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Access to retired and serving civil servants and former UPSC board members for mock interview boards, detailed DAF analysis, and leadership speeches.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-navy">DAF Consultations • Mock Boards • Keynote Speeches</span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-maroon text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-maroon/20">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Infrastructure & LMS Setup</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Turnkey classroom engineering: Hybrid streaming studios, digital smart boards, LMS setup, institutional renovation, and ergonomic student setups.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-maroon">Hybrid Classes • LMS Integration • Studio Setup</span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-maroon/40 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center text-xl mb-6 shadow-md shadow-brand-navy/20">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-2">Student Engagement & Mentorship</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Structured guidance workshops, test series reviews, one-on-one mentorship sessions, and student goodwill engagement modules for lifelong alumni loyalty.
+                    </p>
+                    <span class="text-xs font-semibold text-brand-navy">Workshops • Webinars • Goodwill Model</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4-PHASE TRANSFORMATION ROADMAP -->
+    <section id="roadmap" class="scroll-mt-28 py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-maroon font-bold text-xs uppercase tracking-widest bg-red-50 border border-red-100 px-3 py-1 rounded-full">Execution Methodology</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3">The 4-Phase Growth Framework</h2>
+                <p class="text-slate-600 mt-3 text-base">How we take coaching institutes from regional presence to national authority.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Phase 1 -->
+                <div class="bg-white rounded-2xl p-6 border-t-4 border-brand-navy shadow-sm relative">
+                    <div class="text-4xl font-black text-slate-200 mb-2">01</div>
+                    <h3 class="text-lg font-bold text-brand-navy">Phase 1: Assessment</h3>
+                    <p class="text-xs text-brand-maroon font-semibold mb-3">Diagnostic & Analysis</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Complete institutional revenue audit, competitive brand positioning analysis, fee structure benchmarking, and market gap discovery.
+                    </p>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="bg-white rounded-2xl p-6 border-t-4 border-brand-maroon shadow-sm relative">
+                    <div class="text-4xl font-black text-slate-200 mb-2">02</div>
+                    <h3 class="text-lg font-bold text-brand-navy">Phase 2: Strategy</h3>
+                    <p class="text-xs text-brand-maroon font-semibold mb-3">Blueprint Design</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Data-backed marketing roadmap, sales funnel structuring, counsellor training workshops, and hybrid studio infrastructure planning.
+                    </p>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="bg-white rounded-2xl p-6 border-t-4 border-brand-navy shadow-sm relative">
+                    <div class="text-4xl font-black text-slate-200 mb-2">03</div>
+                    <h3 class="text-lg font-bold text-brand-navy">Phase 3: Execution</h3>
+                    <p class="text-xs text-brand-maroon font-semibold mb-3">Implementation</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Hyper-targeted lead gen campaigns, onboarding distinguished bureaucratic panelists, mock interview scheduling, and student conversions.
+                    </p>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="bg-white rounded-2xl p-6 border-t-4 border-brand-maroon shadow-sm relative">
+                    <div class="text-4xl font-black text-slate-200 mb-2">04</div>
+                    <h3 class="text-lg font-bold text-brand-navy">Phase 4: Scale</h3>
+                    <p class="text-xs text-brand-maroon font-semibold mb-3">Expansion & Domination</p>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Multi-city franchise/branch expansion, pan-India brand visibility, digital platform scaling, and strategic institutional alliances.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Milestones Horizon -->
+            <div class="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                <h4 class="text-base font-bold text-brand-navy mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-flag-checkered text-brand-maroon"></i> Long-Term Institutional Horizons:
+                </h4>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <span class="text-xs font-bold text-brand-maroon">Year 1 Milestone</span>
+                        <h5 class="font-extrabold text-sm text-slate-800 mt-1">Brand Establishment</h5>
+                        <p class="text-xs text-slate-500 mt-1">Foundational footprint with 10+ Tier-1 coaching partnerships across major hubs.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <span class="text-xs font-bold text-brand-navy">Year 2 Milestone</span>
+                        <h5 class="font-extrabold text-sm text-slate-800 mt-1">Multi-City Expansion</h5>
+                        <p class="text-xs text-slate-500 mt-1">Digital scaling, state capital footprints, and regional test-prep dominance.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <span class="text-xs font-bold text-emerald-600">Year 3 Milestone</span>
+                        <h5 class="font-extrabold text-sm text-slate-800 mt-1">National Alliances</h5>
+                        <p class="text-xs text-slate-500 mt-1">Pan-India recognized examination ecosystem and premier civil service mentorship board.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="bg-brand-navy text-white py-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-4">
+                Ready to Professionalize and Elevate Your Coaching Brand?
+            </h2>
+            <p class="text-slate-300 text-base max-w-2xl mx-auto mb-8">
+                Connect with our advisory board today. Let's discuss customized revenue frameworks, topper tie-ups, and bureaucratic mock boards for your next batch.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button onclick="openModal('Bottom Banner CTA')" class="bg-brand-maroon hover:bg-brand-maroonDark text-white px-8 py-3.5 rounded-xl font-bold text-sm transition shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane"></i> Schedule Strategic Discussion
+                </button>
+                <a href="tel:+918171223486" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3.5 rounded-xl font-semibold text-sm transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-brand-gold"></i> Direct Call: +91 8171223486
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8">
+                            <svg viewBox="0 0 200 200" fill="none" class="w-full h-full">
+                                <polygon points="100,25 155,55 100,85 45,55" fill="#8B1E2D"/>
+                                <rect x="78" y="75" width="44" height="20" rx="3" fill="#8B1E2D"/>
+                                <path d="M50 102 C65 96 85 96 97 104 L97 136 C85 128 65 128 50 134 Z" fill="#ffffff"/>
+                                <path d="M150 102 C135 96 115 96 103 104 L103 136 C115 128 135 128 150 134 Z" fill="#ffffff"/>
+                                <line x1="38" y1="146" x2="162" y2="146" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-extrabold text-white tracking-wider">BRIDGE</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Education Alliance — India's integrated competitive examination growth platform connecting institutes, rankers, and elite civil servants.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-white transition">About Vision & Mission</a></li>
+                        <li><a href="#bridge-meaning" class="hover:text-white transition">The B-R-I-D-G-E Meaning</a></li>
+                        <li><a href="#stakeholders" class="hover:text-white transition">Stakeholder Ecosystem</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services & Infrastructure</a></li>
+                        <li><a href="#exams" class="hover:text-white transition">Targeted Exams Covered</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Examinations</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#exam-upsc" class="hover:text-white transition">UPSC Civil Services</a></li>
+                        <li><a href="#exam-statepsc" class="hover:text-white transition">State PSCs (UPPSC, BPSC)</a></li>
+                        <li><a href="#exam-ssc" class="hover:text-white transition">SSC CGL / CHSL</a></li>
+                        <li><a href="#exam-banking" class="hover:text-white transition">Banking (SBI PO / IBPS)</a></li>
+                        <li><a href="#exam-railway" class="hover:text-white transition">Railway RRB Recruitment</a></li>
+                        <li><a href="#exam-neetjee" class="hover:text-white transition">NEET UG & IIT-JEE</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-xs uppercase tracking-widest mb-3">Direct Contact</h4>
+                    <div class="space-y-3 text-xs">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <a href="tel:+918171223486" class="hover:text-white transition font-medium">+91 8171223486</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <a href="https://wa.me/918171223486" target="_blank" rel="noopener noreferrer" class="hover:text-white transition font-medium">WhatsApp: +91 8171223486</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-brand-maroon"></i>
+                            <span>contact@bridgealliance.in</span>
+                        </div>
+                        <div class="pt-2">
+                            <button onclick="openModal('Footer Callback Button')" class="px-4 py-2 bg-brand-maroon hover:bg-brand-maroonDark text-white text-xs font-bold rounded-lg transition">
+                                Request Quick Callback
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> BRIDGE - Education Alliance. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Partnership</a>
+                    <a href="#" class="hover:text-slate-400">Code of Ethics</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL (ACCESSIBLE + ZERO POPUP BLOCKER) -->
+    <div id="leadModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none">
+        
+        <div id="modalBox" class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden transform scale-95 transition-all duration-300 border border-slate-200">
+            
+            <!-- Modal Header -->
+            <div class="bg-gradient-to-r from-brand-navy to-slate-900 text-white p-6 relative">
+                <button onclick="closeModal()" aria-label="Close modal" class="absolute top-4 right-4 text-slate-300 hover:text-white text-lg transition focus:outline-none w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-brand-maroon text-[10px] font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-bolt"></i> Fast Connect
+                </div>
+                <h3 id="modalTitle" class="text-xl font-bold">Welcome to BRIDGE Alliance</h3>
+                <p class="text-xs text-slate-300 mt-1">Please provide your details so our strategic team can assist your exact requirements.</p>
+            </div>
+
+            <!-- Modal Form -->
+            <form id="leadForm" onsubmit="handleFormSubmit(event)" class="p-6 space-y-4">
+                
+                <!-- Full Name -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5" for="name">
+                        Your Full Name <span class="text-brand-maroon">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400 text-sm">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <input type="text" id="name" required placeholder="e.g. Rajesh Sharma" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-maroon focus:bg-white transition">
+                    </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5" for="phone">
+                        Phone Number <span class="text-brand-maroon">*</span>
+                    </label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400 text-sm">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <input type="tel" id="phone" pattern="[0-9+\s-]{10,15}" required placeholder="+91 8171223486" class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-brand-maroon focus:bg-white transition">
+                    </div>
+                </div>
+
+                <!-- Reason for Requirement -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5" for="reason">
+                        Reason for Search / How can we help? <span class="text-brand-maroon">*</span>
+                    </label>
+                    <select id="reason" required class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:outline-none focus:border-brand-maroon focus:bg-white transition">
+                        <option value="" disabled selected>Select Your Primary Objective</option>
+                        <option value="Coaching Institute Growth / Revenue Optimization">I am a Coaching Owner (Need Revenue & Growth Solutions)</option>
+                        <option value="Mock Interview Panels & Bureaucrat Access">Need Bureaucrats for Mock Interview / DAF Panels</option>
+                        <option value="Topper & Ranker Tie-Ups">Want Ranker Testimonials / Seminars (AIR 1 - 100)</option>
+                        <option value="Infrastructure & Hybrid Studio Setup">Setting up Hybrid Classes / LMS / Studio</option>
+                        <option value="Aspirant / Student Mentorship Inquiry">I am a Student / Aspirant seeking guidance</option>
+                        <option value="Bureaucrat / Expert Panelist Onboarding">I am a Bureaucrat / Expert looking to collaborate</option>
+                        <option value="Other Business Alliance">Other Alliance / General Inquiry</option>
+                    </select>
+                </div>
+
+                <!-- Specific Target Exam -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5" for="targetExam">
+                        Target Examination
+                    </label>
+                    <select id="targetExam" class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm text-slate-800 focus:outline-none focus:border-brand-maroon focus:bg-white transition">
+                        <option value="General / Not Specified">Select Exam (Optional)</option>
+                        <option value="UPSC Civil Services (CSE)">UPSC Civil Services</option>
+                        <option value="State PSC (UPPSC, BPSC, APPSC)">State PSC</option>
+                        <option value="SSC CGL / CHSL">SSC CGL / CHSL</option>
+                        <option value="Banking (SBI PO / IBPS)">Banking (SBI PO / IBPS)</option>
+                        <option value="Railway Recruitment (RRB)">Railway (RRB)</option>
+                        <option value="NEET UG">NEET UG</option>
+                        <option value="IIT-JEE">IIT-JEE</option>
+                    </select>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="pt-2 flex flex-col gap-2">
+                    <button type="submit" class="w-full py-3 bg-brand-maroon hover:bg-brand-maroonDark text-white font-bold text-sm rounded-lg shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                        <span>Submit & Connect on WhatsApp</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                    
+                    <a href="https://wa.me/918171223486?text=Hi%20BRIDGE%20Alliance,%20I%20am%20visiting%20your%20website%20and%20want%20to%20connect%20urgently." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold text-xs rounded-lg transition border border-emerald-200 text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i> Connect Directly on WhatsApp
+                    </a>
+                </div>
+            </form>
+
+            <!-- Success State Message -->
+            <div id="modalSuccess" class="hidden p-8 text-center space-y-4">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-800">Thank You!</h4>
+                <p class="text-xs text-slate-600">Your requirement has been logged. We have opened WhatsApp to confirm your request directly with our advisory board.</p>
+                <div class="pt-2">
+                    <button onclick="closeModal()" class="px-6 py-2.5 bg-brand-navy text-white text-xs font-bold rounded-lg">
+                        Continue Browsing
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FLOATING CONTACT SHORTCUTS -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <a href="tel:+918171223486" aria-label="Call BRIDGE Alliance" class="w-12 h-12 bg-brand-maroon hover:bg-brand-maroonDark text-white rounded-full flex items-center justify-center shadow-xl transition-transform hover:scale-110 text-lg border-2 border-white">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/918171223486?text=Hello%20BRIDGE%20Alliance,%20I%20want%20to%20know%20more%20about%20your%20coaching%20and%20panel%20services" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="w-12 h-12 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-xl transition-transform hover:scale-110 text-2xl border-2 border-white">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- SCRIPT LOGIC -->
+    <script>
+        const leadModal = document.getElementById('leadModal');
+        const modalBox = document.getElementById('modalBox');
+        const leadForm = document.getElementById('leadForm');
+        const modalSuccess = document.getElementById('modalSuccess');
+
+        function openModal(contextNote = '') {
+            leadModal.classList.remove('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-95');
+            modalBox.classList.add('scale-100');
+            document.body.classList.add('modal-active');
+        }
+
+        // Exact or token-matching exam select pre-filler
+        function openModalForExam(examKeyword) {
+            const targetSelect = document.getElementById('targetExam');
+            if (targetSelect) {
+                const query = examKeyword.toLowerCase();
+                for (let i = 0; i < targetSelect.options.length; i++) {
+                    const optText = targetSelect.options[i].text.toLowerCase();
+                    const optVal = targetSelect.options[i].value.toLowerCase();
+                    if (optText.includes(query) || optVal.includes(query)) {
+                        targetSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            openModal(`Inquiry for ${examKeyword}`);
+        }
+
+        function closeModal() {
+            leadModal.classList.add('opacity-0', 'pointer-events-none');
+            modalBox.classList.remove('scale-100');
+            modalBox.classList.add('scale-95');
+            document.body.classList.remove('modal-active');
+            sessionStorage.setItem('bridge_popup_shown', 'true');
+
+            // Reset form view when closed so user can re-open cleanly
+            setTimeout(() => {
+                leadForm.reset();
+                leadForm.classList.remove('hidden');
+                modalSuccess.classList.add('hidden');
+            }, 300);
+        }
+
+        // Escape Key Support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !leadModal.classList.contains('pointer-events-none')) {
+                closeModal();
+            }
+        });
+
+        // Close on Backdrop Click
+        leadModal.addEventListener('click', (e) => {
+            if (e.target === leadModal) {
+                closeModal();
+            }
+        });
+
+        // Smart delayed pop-up (8-second delay respects Core Web Vitals)
+        window.addEventListener('DOMContentLoaded', () => {
+            const hasSeen = sessionStorage.getItem('bridge_popup_shown');
+            if (!hasSeen) {
+                setTimeout(() => {
+                    if (leadModal.classList.contains('pointer-events-none')) {
+                        openModal('Timed Engagement Popup');
+                    }
+                }, 8000);
+            }
+        });
+
+        // Form Submit Handler with Pop-up Blocker Protection
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const reason = document.getElementById('reason').value;
+            const targetExam = document.getElementById('targetExam').value;
+
+            const text = `*New Alliance Inquiry - BRIDGE Alliance*%0A%0A` +
+                         `*Name:* ${encodeURIComponent(name)}%0A` +
+                         `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                         `*Target Exam:* ${encodeURIComponent(targetExam)}%0A` +
+                         `*Requirement:* ${encodeURIComponent(reason)}`;
+
+            const waUrl = `https://wa.me/918171223486?text=${text}`;
+
+            leadForm.classList.add('hidden');
+            modalSuccess.classList.remove('hidden');
+
+            // Synchronous call inside click event prevents mobile popup blockers
+            const waWindow = window.open(waUrl, '_blank');
+            if (!waWindow || waWindow.closed || typeof waWindow.closed === 'undefined') {
+                window.location.href = waUrl;
+            }
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+</html>
